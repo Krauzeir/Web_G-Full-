@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <!--Seguir ordem de tamanho: Do menor para o maior-->
+        <source media="(max-width: 700px)" srcset="imagens/imagem_p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/imagem_m.png" type="image/png">
+        <img src="imagens/imagem_g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Testando uma música do Genshin Impact</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/genshin.mp3" type="audio/mpeg">
+        <source src="midia/genshin.ogg" type="audio/ogg">
+        <source src="midia/genshin.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir os formatos de audio. <a href="midia/genshin.mp3">Clique aqui para baixar o arquivo</a></p>
+
+    </audio>
+    <!--Formatos MP3 WAV OGG -->
+</body>
+</html>
