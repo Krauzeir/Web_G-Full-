@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video com HTML5</title>
+</head>
+<body>
+    <!--Para vídeo baixar o: HandBrake: https://handbrake.fr/downloads.php-->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Vídeo hospedado no meu próprio servidor</p>
+    <video width="500" controls poster="imagens/seto.jpg" loop>
+        <source src="midia/kaiba.mp4" type="video/mp4">
+        <source src="midia/kaiba_720p30.m4v" type="video/mp4">
+        <source src="midia/kaiba_720p30web.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade de vídeo</p>
+    </video>    
+    
+    <!-- De preferência fazer da forma abaixo. Formato MKV-->
+    <h1>Inserindo vídeos hospedados externamente</h1>
+    <iframe width="560" height="560" src="https://www.youtube.com/embed/eyonP1AgC0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Caso deseja hospedar vídeo de forma particular/por assinatura/profissional (sem concorrência). Recomenda-se o vimeo: https://vimeo.com/pt-br/-->
+
+</body>
+</html>
